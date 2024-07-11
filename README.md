@@ -95,4 +95,10 @@ sudo systemctl restart jenkins)
 35. Go to github repository settings -> webhook ->payload URL.
 36. payload url = http://< your-instance-public-ip >:8080/github-webhook/
 37. Go to your security gourp and configure the security of your 8080 port as anywhere otherwise github won't access.
-38. 
+   ![image](https://github.com/user-attachments/assets/7c4bf62e-399c-4754-a62f-fe3c5ac8d76a)
+
+38.Then, got to your job -> configure-> build triggers ->  GitHub hook trigger for GITScm polling -> save.
+39. I did a code change in github and it triggered automatically in jenkins.
+![image](https://github.com/user-attachments/assets/784ae89a-2e88-4369-b120-52214122772b)
+
+40. Hence, completed
